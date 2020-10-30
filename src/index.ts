@@ -2,8 +2,10 @@ import * as express from 'express';
 
 const app = express();
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-    return res.send('Hello, World!');
+    return res.send("Hello")
 })
 
 
